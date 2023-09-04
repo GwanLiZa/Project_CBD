@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Project_CBD/static/css/main.073c9b0a.css",
+    "main.js": "/Project_CBD/static/js/main.ce22f95d.js",
+    "static/js/787.19a5b47a.chunk.js": "/Project_CBD/static/js/787.19a5b47a.chunk.js",
+    "static/media/logo.svg": "/Project_CBD/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Project_CBD/index.html",
+    "main.073c9b0a.css.map": "/Project_CBD/static/css/main.073c9b0a.css.map",
+    "main.ce22f95d.js.map": "/Project_CBD/static/js/main.ce22f95d.js.map",
+    "787.19a5b47a.chunk.js.map": "/Project_CBD/static/js/787.19a5b47a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ce22f95d.js"
+  ]
+}
