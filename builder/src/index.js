@@ -11,6 +11,7 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
+
     <BrowserRouter basename="/Project_CBD">
       <App />
     </BrowserRouter>
