@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
@@ -19,24 +19,21 @@ const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
 
 /*****Routes******/
 
-const ThemeRoutes = [
-  {
-    path: "/",
-    element: <FullLayout />,
-    children: [
-      { path: "/", element: <Navigate to="/starter" /> },
-      { path: "/starter", exact: true, element: <Starter /> },
-      { path: "/about", exact: true, element: <About /> },
-      { path: "/alerts", exact: true, element: <Alerts /> },
-      { path: "/badges", exact: true, element: <Badges /> },
-      { path: "/buttons", exact: true, element: <Buttons /> },
-      { path: "/cards", exact: true, element: <Cards /> },
-      { path: "/grid", exact: true, element: <Grid /> },
-      { path: "/table", exact: true, element: <Tables /> },
-      { path: "/forms", exact: true, element: <Forms /> },
-      { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
-    ],
-  },
-];
+const ThemeRoutes = (
+  <Routes>
+    <Route path="/" element={<FullLayout />}>
+      <Route path="starter" element={<Starter />} />
+      <Route path="about" element={<About />} />
+      <Route path="alerts" element={<Alerts />} />
+      <Route path="badges" element={<Badges />} />
+      <Route path="buttons" element={<Buttons />} />
+      <Route path="cards" element={<Cards />} />
+      <Route path="grid" element={<Grid />} />
+      <Route path="table" element={<Tables />} />
+      <Route path="forms" element={<Forms />} />
+      <Route path="breadcrumbs" element={<Breadcrumbs />} />
+    </Route>
+  </Routes>
+);
 
 export default ThemeRoutes;
