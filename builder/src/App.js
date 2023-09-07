@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useState, useCallback } from "react";
+
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("./layouts/FullLayout.js"));
@@ -18,9 +18,6 @@ const Forms = lazy(() => import("./views/ui/Forms"));
 const Breadcrumbs = lazy(() => import("./views/ui/Breadcrumbs"));
 
 const App = () => {
-  const [, updateState] = useState();
-  const forceUpdate = useCallback(() => updateState({}), []);
-  console.log("render")
 
   return (
     <Routes>

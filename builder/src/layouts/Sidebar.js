@@ -1,6 +1,7 @@
 import { Button, Nav, NavItem } from "reactstrap";
 import Logo from "./Logo";
 import { Link, useLocation } from "react-router-dom";
+import { useState, useCallback } from "react";
 
 const navigation = [
   {
@@ -56,6 +57,10 @@ const navigation = [
 ];
 
 const Sidebar = () => {
+  const [, updateState] = useState();
+  const forceUpdate = useCallback(() => updateState({}), []);
+  console.log("render")
+
   const showMobilemenu = () => {
     document.getElementById("sidebarArea").classList.toggle("showSidebar");
   };
@@ -77,7 +82,7 @@ const Sidebar = () => {
       <div className="pt-4 mt-2">
         <Nav vertical className="sidebarNav">
           {navigation.map((navi, index) => (
-            <NavItem key={index} className="sidenav-bg">
+            <NavItem key={index} className="sidenav-bg" onClick={forceUpdate}>
               <Link
                 to={navi.href}
                 className={
