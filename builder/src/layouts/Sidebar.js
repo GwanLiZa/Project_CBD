@@ -94,6 +94,8 @@ const Sidebar = () => {
                 <i className={navi.icon}></i>
                 <span className="ms-3 d-inline-block">{navi.title}</span>
               </Link>
+              {console.log("navi.href:", navi.href)}
+              {console.log("location.pathname:", location.pathname)}
             </NavItem>
           ))}
           <Button
