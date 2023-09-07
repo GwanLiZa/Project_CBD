@@ -22,16 +22,16 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<FullLayout />}>
-        <Route path="starter" element={<Starter />} />
-        <Route path="about" element={<About />} />
-        <Route path="alerts" element={<Alerts />} />
-        <Route path="badges" element={<Badges />} />
-        <Route path="buttons" element={<Buttons />} />
-        <Route path="cards" element={<Cards />} />
-        <Route path="grid" element={<Grid />} />
-        <Route path="table" element={<Tables />} />
-        <Route path="forms" element={<Forms />} />
-        <Route path="breadcrumbs" element={<Breadcrumbs />} />
+        <Route path="/starter" element={<Starter />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/alerts" element={<Alerts />} />
+        <Route path="/badges" element={<Badges />} />
+        <Route path="/buttons" element={<Buttons />} />
+        <Route path="/cards" element={<Cards />} />
+        <Route path="/grid" element={<Grid />} />
+        <Route path="/table" element={<Tables />} />
+        <Route path="/forms" element={<Forms />} />
+        <Route path="/breadcrumbs" element={<Breadcrumbs />} />
       </Route>
     </Routes>
   );
