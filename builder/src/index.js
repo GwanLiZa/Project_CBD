@@ -4,7 +4,7 @@ import {createRoot} from 'react-dom/client';
 import "./assets/scss/style.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Loader from "./layouts/loader/Loader";
 
 const rootElement = document.getElementById('root');
@@ -12,11 +12,11 @@ const root = createRoot(rootElement);
 
 root.render(
   <Suspense fallback={<Loader />}>
-    <BrowserRouter basename="/Project_CBD">
+    <HashRouter>
       <React.StrictMode>
         <App />
       </React.StrictMode>
-    </BrowserRouter>
+    </HashRouter>
   </Suspense>
 );
 
