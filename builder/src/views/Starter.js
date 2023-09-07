@@ -45,6 +45,7 @@ const BlogData = [
 ];
 
 const Starter = () => {
+  console.log("debug")
   return (
     <div>
       {/***Top Cards***/}
