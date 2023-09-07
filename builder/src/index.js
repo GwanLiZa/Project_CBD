@@ -13,9 +13,9 @@ const root = createRoot(rootElement);
 root.render(
   <Suspense fallback={<Loader />}>
     <BrowserRouter basename="/Project_CBD">
-        <React.StrictMode>
-      <App />
-        </React.StrictMode>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
     </BrowserRouter>
   </Suspense>
 );
